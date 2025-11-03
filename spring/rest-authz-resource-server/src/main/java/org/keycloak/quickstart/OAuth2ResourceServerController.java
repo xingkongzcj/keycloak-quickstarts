@@ -28,7 +28,7 @@ public class OAuth2ResourceServerController {
 		return String.format("Hello, %s!", jwt.getClaimAsString("preferred_username"));
 	}
 
-	@GetMapping("/protected/premium")
+	@GetMapping("/api/hello")
 	public String premium(@AuthenticationPrincipal Jwt jwt) {
 		return String.format("Hello, %s!", jwt.getClaimAsString("preferred_username"));
 	}
